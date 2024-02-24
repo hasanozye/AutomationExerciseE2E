@@ -1,6 +1,5 @@
 package stepdefs;
 
-import io.cucumber.core.internal.com.fasterxml.jackson.databind.cfg.BaseSettings;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -12,13 +11,13 @@ import utils.Driver;
 
 import java.util.Arrays;
 
-public class BaseStepDefs {
+public class BaseSteps {
 
     protected WebDriver driver;
     protected WebDriverWait wait;
 
 
-    public BaseStepDefs() {
+    public BaseSteps() {
         driver = Driver.getDriver();
         wait = Driver.getWait();
 
