@@ -1,11 +1,13 @@
 package pages;
 
+import com.github.javafaker.Faker;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import driver.Driver;
 
@@ -15,12 +17,13 @@ public class BaseTest {
 
     protected WebDriver driver;
     protected WebDriverWait wait;
+    protected Faker faker;
 
 
     public BaseTest() {
         driver = Driver.getDriver();
         wait = Driver.getWait();
-
+        faker = new Faker();
     }
 
     public void click(By locator) {
@@ -87,6 +90,17 @@ public class BaseTest {
         WebElement webElement = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
         webElement.clear();
         sendKeys(webElement, text);
+    }
+
+    public void selectByVisibleText(WebElement element, String visibleTextMsg) {
+        waitForVisibility(element);
+        Select select = new Select(element);
+        select.selectByVisibleText(visibleTextMsg);
+    }
+
+    public void scrollIntoElement(WebElement element) {
+        ((JavascriptExecutor) driver)
+                .executeScript("arguments[0].scrollIntoView();", element);
     }
 
 
