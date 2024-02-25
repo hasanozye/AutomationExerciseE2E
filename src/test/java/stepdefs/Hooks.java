@@ -10,17 +10,6 @@ import driver.Driver;
 
 public class Hooks {
 
-    private WebDriver driver;
-
-    @Before
-    public void setUp() {
-        driver = Driver.getDriver();
-        HomePage homePage = PageFactory.initElements(driver, HomePage.class);
-        LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
-
-
-    }
-
     @After
     public void tearDown() {
         if (Driver.getDriver() != null) {
