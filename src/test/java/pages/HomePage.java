@@ -2,17 +2,23 @@ package pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class HomePage extends BaseTest {
 
+    public HomePage() {
+        super();
+        PageFactory.initElements(driver, this);
+    }
+
     @FindBy(xpath = "//ul[contains(@class,'navbar')]/descendant::a[contains(.,'Signup')]")
-    public WebElement upperMenuSignUpLogin;
+    private WebElement upperMenuSignUpLogin;
 
     @FindBy(xpath = "//div[contains(@class,'logo')]")
-    public WebElement homePageLogo;
+    private WebElement homePageLogo;
 
     @FindBy(xpath = "//li[.//a[contains(.,' Hasan')]]")
-    public WebElement upNavBarLoggedInUserVerification;
+    private WebElement upNavBarLoggedInUserVerification;
 
     public boolean isHomePageLoaded() {
         waitForVisibility(homePageLogo);
@@ -21,7 +27,6 @@ public class HomePage extends BaseTest {
 
     public void clickSignupMenu() {
         click(upperMenuSignUpLogin);
-
     }
 
 
