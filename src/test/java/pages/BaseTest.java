@@ -1,4 +1,4 @@
-package stepdefs;
+package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -7,17 +7,17 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import utils.Driver;
+import driver.Driver;
 
 import java.util.Arrays;
 
-public class BaseSteps {
+public class BaseTest {
 
     protected WebDriver driver;
     protected WebDriverWait wait;
 
 
-    public BaseSteps() {
+    public BaseTest() {
         driver = Driver.getDriver();
         wait = Driver.getWait();
 
@@ -107,6 +107,14 @@ public class BaseSteps {
     public void waitForVisibility(WebElement element) {
         wait.until(ExpectedConditions.visibilityOf(element));
 
+    }
+
+    public void waitForElementToBeClickable(By locator) {
+        wait.until(ExpectedConditions.elementToBeClickable(locator));
+    }
+
+    public void waitForElementToBeClickable(WebElement element) {
+        wait.until(ExpectedConditions.elementToBeClickable(element));
     }
 
 

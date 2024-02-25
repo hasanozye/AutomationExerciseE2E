@@ -1,18 +1,14 @@
-package utils;
+package driver;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.time.Duration;
+import static driver.DriverFactory.*;
 
 public class Driver {
 
     protected static ThreadLocal<WebDriver> drivers = new ThreadLocal<>();
     protected static ThreadLocal<WebDriverWait> waits = new ThreadLocal<>();
-
     public static WebDriver getDriver() {
         return getDriver(Browsers.CHROME);
     }
@@ -23,19 +19,14 @@ public class Driver {
         if (drivers.get() == null) {
 
             switch (browser) {
-
                 case EDGE -> {
-                    drivers.set(new EdgeDriver());
-
+                    drivers.set(createEdge());
                 }
                 case FIREFOX -> {
-
-                    drivers.set(new FirefoxDriver());
+                    drivers.set(createFirefox());
                 }
-
                 default -> {
-
-                    drivers.set(new ChromeDriver());
+                    drivers.set(createChrome());
                 }
             }
         }
