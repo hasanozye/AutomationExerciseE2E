@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import pages.HomePage;
 import pages.LoginPage;
-import utils.Driver;
+import driver.Driver;
 
 public class Hooks {
 
