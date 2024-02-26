@@ -5,7 +5,7 @@ import io.cucumber.testng.CucumberOptions;
 
 
 @CucumberOptions(
-        features = {"src/test/resources/features/Login.feature"},
+        features = {"src/test/resources/features/RegisterUser.feature"},
         glue = {"stepdefs"}
 )
 public class Runner extends AbstractTestNGCucumberTests {

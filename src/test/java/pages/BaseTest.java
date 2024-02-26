@@ -1,16 +1,14 @@
 package pages;
 
 import com.github.javafaker.Faker;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import driver.Driver;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class BaseTest {
@@ -29,7 +27,6 @@ public class BaseTest {
     public void click(By locator) {
         WebElement webElement = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
         click(webElement);
-
     }
 
     public void click(WebElement element) {
@@ -129,6 +126,71 @@ public class BaseTest {
 
     public void waitForElementToBeClickable(WebElement element) {
         wait.until(ExpectedConditions.elementToBeClickable(element));
+    }
+
+    /**
+     * Closes any new tabs or windows and switches back to the original window.
+     * This is for AdBlocker opening a new TY page when downloaded while UI Testing.
+     *
+     * @param driver the WebDriver instance
+     */
+    public void closeNewTabsAndSwitchBack(WebDriver driver) {
+        ArrayList<String> tabs = new ArrayList<>(driver.getWindowHandles());
+        if (tabs.size() > 1) {
+            // Assumes the first tab is the original one and closes all others
+            for (int i = 1; i < tabs.size(); i++) {
+                driver.switchTo().window(tabs.get(i)); // Switch to the new tab/window
+                driver.close(); // Close the new tab/window
+            }
+            driver.switchTo().window(tabs.get(0)); // Switch back to the original tab/window
+        }
+    }
+
+    /**
+     * Alert dialog'unun belirtilen süre içinde görünüp görünmediğini kontrol eder.
+     * Eğer alert görünürse, true döner.
+     * @return Alert görünürse true, aksi halde false.
+     */
+    public boolean isAlertPresent() {
+        try {
+            wait.until(ExpectedConditions.alertIsPresent());
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    /**
+     * Eğer bir alert dialog'u mevcutsa, onu kabul eder (OK tuşuna basar).
+     */
+    public void acceptAlertIfExists() {
+        if (isAlertPresent()) {
+            Alert alert = Driver.getDriver().switchTo().alert();
+            alert.accept();
+        }
+    }
+
+    /**
+     * Eğer bir alert dialog'u mevcutsa, onu reddeder (Cancel tuşuna basar veya kapatır).
+     */
+    public void dismissAlertIfExists() {
+        if (isAlertPresent()) {
+            Alert alert = driver.switchTo().alert();
+            alert.dismiss();
+        }
+    }
+
+    /**
+     * Mevcut alert dialog'unun metnini alır.
+     *
+     * @return Alert dialog'unun metni.
+     */
+    public String getAlertText() {
+        if (isAlertPresent()) {
+            Alert alert = driver.switchTo().alert();
+            return alert.getText();
+        }
+        return null;
     }
 
 

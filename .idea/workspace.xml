@@ -4,20 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1965b1c1-b2dd-490c-ae1a-7e86e9c4f1a2" name="Changes" comment="BaseStepDefs added for methods">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="1965b1c1-b2dd-490c-ae1a-7e86e9c4f1a2" name="Changes" comment="delete this bitch">
+      <change afterPath="$PROJECT_DIR$/src/main/java/readers/property/PropertyReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/AccountCreatedPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/AccountDeletedPage.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/runners/Hooks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefs/LoginStepdefs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefs/Runner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utils/Browsers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utils/Driver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Login.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/SignupPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefs/AccountCreatedPageSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefs/AccountDeletedPageSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefs/SignupPageSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/driver/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/driver/DriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runners/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/HomePageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/HomePageSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefs/LoginPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefs/LoginPageSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/datafiles/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/datafiles/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/RegisterUser.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/RegisterUser.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,33 +50,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/e 15/IdeaProjects/ProjeAutomationExercise&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/e 15/IdeaProjects/ProjeAutomationExercise",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Runner" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="ProjeAutomationExercise" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="stepdefs.*" />
+          <option name="PATTERN" value="pages.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="runners" />
-      <option name="MAIN_CLASS_NAME" value="stepdefs.Runner" />
+      <option name="MAIN_CLASS_NAME" value="runners.Runner" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -98,7 +108,15 @@
       <workItem from="1708547593543" duration="147000" />
       <workItem from="1708582018410" duration="6000" />
       <workItem from="1708611130280" duration="2333000" />
-      <workItem from="1708681635746" duration="319000" />
+      <workItem from="1708681635746" duration="1788000" />
+      <workItem from="1708690817556" duration="2893000" />
+      <workItem from="1708695689970" duration="4943000" />
+      <workItem from="1708770232955" duration="157000" />
+      <workItem from="1708777902364" duration="9415000" />
+      <workItem from="1708849477511" duration="10252000" />
+      <workItem from="1708893945790" duration="1702000" />
+      <workItem from="1708931986083" duration="30000" />
+      <workItem from="1708948048081" duration="9147000" />
     </task>
     <task id="LOCAL-00001" summary="BaseStepDefs added for methods">
       <option name="closed" value="true" />
@@ -108,7 +126,175 @@
       <option name="project" value="LOCAL" />
       <updated>1708681949198</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added Browsers ENUMS">
+      <option name="closed" value="true" />
+      <created>1708681994538</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1708681994538</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added Driver Class">
+      <option name="closed" value="true" />
+      <created>1708682008301</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1708682008301</updated>
+    </task>
+    <task id="LOCAL-00004" summary="IntelliJ Files">
+      <option name="closed" value="true" />
+      <created>1708682091284</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1708682091284</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Created Hooks Class to close the driver.">
+      <option name="closed" value="true" />
+      <created>1708682110297</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1708682110297</updated>
+    </task>
+    <task id="LOCAL-00006" summary="extended gitignore">
+      <option name="closed" value="true" />
+      <created>1708682125430</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1708682125430</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Created Login Feature">
+      <option name="closed" value="true" />
+      <created>1708682140950</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1708682140950</updated>
+    </task>
+    <task id="LOCAL-00008" summary="rename and movement">
+      <option name="closed" value="true" />
+      <created>1708770256022</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1708770256022</updated>
+    </task>
+    <task id="LOCAL-00009" summary="using appropiate pom">
+      <option name="closed" value="true" />
+      <created>1708770281132</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1708770281132</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Test Case 1">
+      <option name="closed" value="true" />
+      <created>1708770291363</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1708770291363</updated>
+    </task>
+    <task id="LOCAL-00011" summary="My Runner Class">
+      <option name="closed" value="true" />
+      <created>1708770300739</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1708770300739</updated>
+    </task>
+    <task id="LOCAL-00012" summary="pom xml updated">
+      <option name="closed" value="true" />
+      <created>1708770319932</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1708770319932</updated>
+    </task>
+    <task id="LOCAL-00013" summary="carry on. Movements of the class for better pom suite.">
+      <option name="closed" value="true" />
+      <created>1708819292637</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1708819292637</updated>
+    </task>
+    <task id="LOCAL-00014" summary="DriverFactory for reading properties and creating options and so much better etc.">
+      <option name="closed" value="true" />
+      <created>1708819314823</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1708819314823</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Developed HomePage class">
+      <option name="closed" value="true" />
+      <created>1708819336605</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1708819336605</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Developed Hooks class">
+      <option name="closed" value="true" />
+      <created>1708819350957</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1708819350957</updated>
+    </task>
+    <task id="LOCAL-00017" summary="config.properties is best!">
+      <option name="closed" value="true" />
+      <created>1708819369007</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1708819369007</updated>
+    </task>
+    <task id="LOCAL-00018" summary="added faker library and select methods for ease">
+      <option name="closed" value="true" />
+      <created>1708895536203</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1708895536203</updated>
+    </task>
+    <task id="LOCAL-00019" summary="turned the mall private because it is easier and more appropiate for OOP">
+      <option name="closed" value="true" />
+      <created>1708895565617</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1708895565617</updated>
+    </task>
+    <task id="LOCAL-00020" summary="HomePageSteps REFİNED AND READY TO GO BABY">
+      <option name="closed" value="true" />
+      <created>1708895581583</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1708895581583</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Hooks Refined for better">
+      <option name="closed" value="true" />
+      <created>1708895618294</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1708895618294</updated>
+    </task>
+    <task id="LOCAL-00022" summary="delete this bitch">
+      <option name="closed" value="true" />
+      <created>1708895627886</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1708895627886</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,6 +313,27 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="BaseStepDefs added for methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="BaseStepDefs added for methods" />
+    <MESSAGE value="Added Browsers ENUMS" />
+    <MESSAGE value="Added Driver Class" />
+    <MESSAGE value="IntelliJ Files" />
+    <MESSAGE value="Created Hooks Class to close the driver." />
+    <MESSAGE value="extended gitignore" />
+    <MESSAGE value="Created Login Feature" />
+    <MESSAGE value="rename and movement" />
+    <MESSAGE value="using appropiate pom" />
+    <MESSAGE value="Test Case 1" />
+    <MESSAGE value="My Runner Class" />
+    <MESSAGE value="pom xml updated" />
+    <MESSAGE value="carry on. Movements of the class for better pom suite." />
+    <MESSAGE value="DriverFactory for reading properties and creating options and so much better etc." />
+    <MESSAGE value="Developed HomePage class" />
+    <MESSAGE value="Developed Hooks class" />
+    <MESSAGE value="config.properties is best!" />
+    <MESSAGE value="added faker library and select methods for ease" />
+    <MESSAGE value="turned the mall private because it is easier and more appropiate for OOP" />
+    <MESSAGE value="HomePageSteps REFİNED AND READY TO GO BABY" />
+    <MESSAGE value="Hooks Refined for better" />
+    <MESSAGE value="delete this bitch" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete this bitch" />
   </component>
 </project>

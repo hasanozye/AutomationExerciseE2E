@@ -34,4 +34,15 @@ public class HomePageSteps {
     public void clickOnSignupButton() {
         homePage.clickSignupMenu();
     }
+
+    @And("Verify that Logged in as username is visible")
+    public void verifyThatLoggedInAsUsernameIsVisible() {
+        Assert.assertTrue(homePage.isUserLoggedIn());
+
+    }
+
+    @And("Click Delete Account button")
+    public void clickDeleteAccountButton() {
+        homePage.deleteUserAcc();
+    }
 }
