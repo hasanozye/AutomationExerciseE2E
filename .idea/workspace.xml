@@ -34,27 +34,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/e 15/IdeaProjects/ProjeAutomationExercise",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/e 15/IdeaProjects/ProjeAutomationExercise&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Runner" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="ProjeAutomationExercise" />
@@ -103,6 +103,23 @@
       <workItem from="1708948048081" duration="9147000" />
       <workItem from="1708982155452" duration="993000" />
       <workItem from="1708983160502" duration="766000" />
+      <workItem from="1709019819013" duration="3792000" />
+      <workItem from="1709024301789" duration="600000" />
+      <workItem from="1709122197439" duration="763000" />
+      <workItem from="1709124872898" duration="564000" />
+      <workItem from="1709191112536" duration="231000" />
+      <workItem from="1709191356633" duration="1014000" />
+      <workItem from="1709193022818" duration="420000" />
+      <workItem from="1709193453887" duration="1000" />
+      <workItem from="1709230947309" duration="5673000" />
+      <workItem from="1709275536932" duration="597000" />
+      <workItem from="1709659628933" duration="1720000" />
+      <workItem from="1709833377196" duration="709000" />
+      <workItem from="1709887436679" duration="29000" />
+      <workItem from="1710321463249" duration="16000" />
+      <workItem from="1710695340344" duration="635000" />
+      <workItem from="1710742654134" duration="255000" />
+      <workItem from="1711201627783" duration="358000" />
     </task>
     <task id="LOCAL-00001" summary="BaseStepDefs added for methods">
       <option name="closed" value="true" />
